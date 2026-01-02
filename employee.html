@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance</title>
+    <link rel="stylesheet" href="employee-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Attendance</h1>
+        <div id="login-section">
+            <label for="employee-id" class="emp">Employee ID:</label>
+            <input type="text" id="employee-id" placeholder="Enter your Employee ID">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="attendance-section">
+            <h2 id="welcome-message"></h2>
+            <button onclick="checkIn()">Check-In</button>
+            <button onclick="checkOut()">Check-Out</button>
+            <p id="status-message"></p>
+        </div>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

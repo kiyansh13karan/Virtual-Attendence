@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Attendance Management</h1>
+
+    <div class="input-section">
+        <input type="text" id="studentName" placeholder="Enter employee name">
+        <button onclick="addStudent()">Add Employee</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceList"></tbody>
+    </table>
+
+    <div class="summary">
+        <p>Present: <span id="presentCount">0</span></p>
+        <p>Absent: <span id="absentCount">0</span></p>
+    </div>
+</div>
+
+<script src="admin-dashboard.js"></script>
+</body>
+</html>

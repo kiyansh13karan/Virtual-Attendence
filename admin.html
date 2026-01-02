@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <div id="login-section">
+            <label for="admin-password" class="pass">Password:</label>
+            <input type="password" id="admin-password" placeholder="Enter admin password">
+            <button onclick="window.location.href='admin-dashboard.html'">Login</button>
+            <button onclick="window.location.href='index.html'" class="bth-button">Back to Home</button>
+        </div>
+        <!-- <div id="dashboard-section">
+            <h2>Attendance Records</h2>
+            <table id="attendance-table">
+                <thead>
+                    <tr class="tr-section">
+                        <th>Employee ID</th>
+                        <th>Date</th>
+                        <th>Check-In</th>
+                        <th>Check-Out</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-body">
+                    <!-- Attendance records will be populated here -->
+                </tbody>
+            </table>
+            <!-- <button onclick="downloadCSV()">Download CSV</button> -->
+        </div> -->
+        <!-- <button onclick="window.location.href='index.html'" class="bth-button">Back to Home</button> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
